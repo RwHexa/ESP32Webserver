@@ -1,0 +1,138 @@
+html {
+  font-family: Arial, Helvetica, sans-serif; 
+  display: inline-block; 
+  text-align: center;
+}
+h1 {
+  font-size: 1.8rem; 
+  color: white;
+}
+p { 
+  font-size: 1.4rem;
+}
+.topnav { 
+  overflow: hidden; 
+  background-color: #0A1128;
+}
+body {  
+  margin: 0;
+}
+.content { 
+  padding: 5%;
+}
+.card-grid { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: grid; 
+  grid-gap: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card { 
+  background-color: white; 
+  box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+}
+.card-title { 
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #034078;
+}
+
+/* ── Steuerung ─────────────────────────────────────────── */
+
+.control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto 40px auto;
+  max-width: 900px;
+  padding: 0 10px;
+}
+.control-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  padding: 24px 32px;
+  min-width: 220px;
+  flex: 1;
+  text-align: center;
+}
+.control-card h3 {
+  margin: 0 0 16px 0;
+  color: #049faa;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  width: 120px;
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  letter-spacing: 1px;
+}
+.toggle-btn.off {
+  background: #ddd;
+  color: #555;
+}
+.toggle-btn.on {
+  background: #049faa;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(4,159,170,0.5);
+}
+.status-label {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #888;
+}
+
+/* Slider */
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 8px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 160px;
+  height: 8px;
+  border-radius: 4px;
+  background: #ddd;
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #049faa;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(4,159,170,0.4);
+}
+.slider-value {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #049faa;
+  min-width: 36px;
+}
+.send-btn {
+  margin-top: 12px;
+  padding: 8px 24px;
+  background: #049faa;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.send-btn:active {
+  background: #037a80;
+}
